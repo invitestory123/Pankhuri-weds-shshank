@@ -49,21 +49,26 @@ export function Hero() {
       />
 
       <div className="relative mx-auto max-w-md">
-        <div className="arch-frame relative px-6 pt-14 pb-8 text-center sm:px-10 sm:pt-20">
-          <motion.p
+        <div className="arch-frame relative px-6 pt-18 pb-8 text-center sm:px-10 sm:pt-22">
+          <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="font-kicker text-gold text-[0.62rem] tracking-[0.45em] uppercase"
+            className="mx-auto max-w-[270px] space-y-1.5"
           >
-            {invitation.invocation} · You are invited
-          </motion.p>
+            <p className="font-kicker text-gold text-[0.6rem] tracking-[0.22em] uppercase font-medium">
+              {invitation.invocation}
+            </p>
+            <p className="font-kicker text-ink/60 text-[0.54rem] tracking-[0.3em] uppercase">
+              You are invited
+            </p>
+          </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="font-script text-maroon mt-4 text-[2.7rem] leading-[1.05] sm:text-6xl"
+            className="font-script text-maroon mt-4 text-[2.45rem] leading-[1.08] sm:text-6xl"
           >
             {invitation.couple.bride}
             <span className="font-display text-gold mx-2 text-3xl sm:text-4xl">&</span>
