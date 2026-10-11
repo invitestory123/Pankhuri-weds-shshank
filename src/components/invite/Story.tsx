@@ -15,7 +15,7 @@ export function Story() {
           className="via-gold/45 absolute top-2 bottom-2 left-[19px] w-px bg-gradient-to-b from-transparent to-transparent sm:left-[23px]"
         />
         {invitation.story.map((item, i) => (
-          <li key={item.year} className="relative pb-10 pl-14 sm:pl-16">
+          <li key={item.title} className="relative pb-10 pl-14 sm:pl-16">
             <span
               aria-hidden
               className="border-gold/60 bg-paper absolute top-1 left-0 flex size-10 items-center justify-center rounded-full border sm:size-12"

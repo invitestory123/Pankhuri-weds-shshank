@@ -25,11 +25,8 @@ export function Rsvp() {
   return (
     <section id="rsvp" className="relative px-5 py-16">
       <Reveal className="mx-auto mb-10 max-w-md text-center">
-        <p className="font-kicker text-gold text-[0.68rem] tracking-[0.42em] uppercase">
+        <h2 className="font-display text-maroon text-3xl sm:text-4xl">
           {rsvp.title}
-        </p>
-        <h2 className="font-display text-maroon mt-3 text-3xl sm:text-4xl">
-          {rsvp.subtitle}
         </h2>
         <div className="via-gold mx-auto mt-4 h-px w-32 bg-gradient-to-r from-transparent to-transparent" />
       </Reveal>

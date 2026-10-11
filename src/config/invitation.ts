@@ -62,7 +62,7 @@ export const invitation = {
     },
     blessings: [
       "Mrs. Suman Puri & Mr. Sanjay Puri",
-      "Mrs. Manisha Puri & Mr. Anuj Puri",
+      "Mrs. Sunita Puri & Mr. Anuj Puri",
       "Mrs. Nishi Gupta & Mr. Ashutosh Gupta",
       "Baby Raysha Gupta",
     ],
@@ -73,22 +73,22 @@ export const invitation = {
 
   story: [
     {
-      year: "2023",
+      year: "2024",
       title: "When Paths Crossed",
       text: "A serendipitous conversation, shared laughter, and an unspoken connection that grew with every passing day.",
       image: storyPathsCrossed,
     },
     {
       year: "2025",
-      title: "Roka Ceremony",
-      text: "Two families united with blessings, smiles, and the sweet promise of forever amidst marigolds and celebration.",
-      image: storyRoka,
-    },
-    {
-      year: "2026",
       title: "The Proposal",
       text: "A magical proposal by the river where two hearts promised to walk hand in hand forever.",
       image: storyProposal,
+    },
+    {
+      year: "2025",
+      title: "Roka Ceremony",
+      text: "Two families united with blessings, smiles, and the sweet promise of forever amidst marigolds and celebration.",
+      image: storyRoka,
     },
   ],
 
@@ -153,7 +153,6 @@ export const invitation = {
 
   rsvp: {
     title: "RSVP",
-    subtitle: "Kindly confirm your presence with us",
     instructions:
       "Please click on WhatsApp below to send details of the number of guests along with Aadhar card photo(s) for hotel check-in at Raj Vilas Palace.",
     contacts: [
