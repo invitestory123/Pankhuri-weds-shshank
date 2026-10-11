@@ -47,10 +47,7 @@ export function Events() {
               {/* Dress Code Badge */}
               <div className="mt-3.5 flex flex-wrap items-center gap-2">
                 <span className="inline-flex items-center gap-2 rounded-full border border-gold/35 bg-paper/95 px-3 py-1 text-xs text-ink/80 shadow-xs">
-                  <span
-                    className="size-2.5 rounded-full shrink-0 ring-1 ring-gold/40"
-                    style={{ backgroundColor: event.dressCodeColor }}
-                  />
+                  <span className="size-1.5 rounded-full bg-ink/70 shrink-0" aria-hidden />
                   <span>
                     Dress: <strong className="font-medium text-ink/90">{event.dressCode}</strong>
                   </span>

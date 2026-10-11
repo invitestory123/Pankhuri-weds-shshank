@@ -1,10 +1,10 @@
-import { MapPin, Navigation, Phone } from "lucide-react";
+import { MapPin, Navigation } from "lucide-react";
 import { invitation } from "@/config/invitation";
 import { mapsDirectionsUrl, mapsEmbedUrl, mapsPlaceUrl } from "@/lib/invite-utils";
 import { Reveal } from "./Reveal";
 
 export function Venue() {
-  const { venue, contacts } = invitation;
+  const { venue } = invitation;
 
   return (
     <section id="venue" className="relative px-5 py-16">
@@ -47,26 +47,6 @@ export function Venue() {
         </div>
 
         <p className="font-body text-ink/60 mt-4 text-center text-xs">{venue.directionsNote}</p>
-
-        <div className="border-gold/25 bg-paper/70 mt-6 rounded-3xl border px-5 py-4">
-          <p className="font-kicker text-gold text-[0.6rem] tracking-[0.3em] uppercase">
-            For any help
-          </p>
-          <ul className="mt-3 space-y-2">
-            {contacts.map((c) => (
-              <li key={c.phone} className="flex items-center justify-between gap-3">
-                <span className="font-body text-ink/75 text-sm">{c.name}</span>
-                <a
-                  href={`tel:${c.phone}`}
-                  className="text-maroon font-body inline-flex items-center gap-1.5 text-sm"
-                >
-                  <Phone className="size-3.5" aria-hidden />
-                  Call
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
       </Reveal>
     </section>
   );

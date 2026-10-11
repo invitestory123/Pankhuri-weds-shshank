@@ -30,7 +30,7 @@ export function Story() {
                   width={1008}
                   height={1008}
                   loading="lazy"
-                  className="h-44 w-full object-cover sm:h-52"
+                  className="h-56 w-full object-cover object-center sm:h-64"
                 />
                 <div className="px-5 py-4">
                   <h3 className="font-display text-maroon text-xl">{item.title}</h3>

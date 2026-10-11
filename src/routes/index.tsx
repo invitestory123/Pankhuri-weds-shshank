@@ -11,7 +11,7 @@ import { InviteText } from "@/components/invite/InviteText";
 import { Story } from "@/components/invite/Story";
 import { Events } from "@/components/invite/Events";
 import { Venue } from "@/components/invite/Venue";
-import { Gallery } from "@/components/invite/Gallery";
+import { Rsvp } from "@/components/invite/Rsvp";
 import { FooterBlessing } from "@/components/invite/FooterBlessing";
 import { invitation } from "@/config/invitation";
 
@@ -80,7 +80,7 @@ function InvitationPage() {
         <Story />
         <Events />
         <Venue />
-        <Gallery />
+        <Rsvp />
       </main>
       <FooterBlessing />
     </div>

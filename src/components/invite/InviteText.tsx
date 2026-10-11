@@ -28,6 +28,9 @@ export function InviteText() {
             <p className="font-body text-ink/80 text-sm leading-6">
               Daughter of {families.brideSide.parents}
             </p>
+            <p className="font-body text-ink/65 mt-1.5 text-xs leading-5">
+              Grand Daughter of {families.brideSide.grandParents}
+            </p>
           </div>
 
           {/* Weds Knot */}

@@ -214,7 +214,7 @@ def create_og_banner():
     t_draw.text((text_center_x - w_it / 2, itin_y), itin_txt, font=f_itin, fill=gold_text)
     
     # G. Hashtag / Brand Footer
-    hash_txt = "#PankhuriWedsShashank  ·  invitestory.in"
+    hash_txt = "#P.S.ILoveYou  ·  invitestory.in"
     b_h = f_hash.getbbox(hash_txt)
     w_h = b_h[2] - b_h[0]
     t_draw.text((text_center_x - w_h / 2, 508), hash_txt, font=f_hash, fill=(110, 95, 85, 200))
