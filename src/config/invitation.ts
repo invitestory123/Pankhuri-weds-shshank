@@ -24,22 +24,33 @@ export type InviteEvent = {
 };
 
 export const invitation = {
-  invocation: "|| Shree Ganeshaya Namah ||",
+  invocation: "Shree Ganeshaya Namah",
 
   couple: {
-    bride: "Pankhuri",
     groom: "Shashank",
-    monogram: "P & S",
-    hashtag: "#P.S.ILoveYou",
+    bride: "Pankhuri",
+    monogram: "S & P",
+    hashtag: "#S.P.ILoveYou",
   },
 
   /** The main muhurat — powers the countdown and the primary calendar button */
   mainEvent: {
-    title: "Pankhuri & Shashank — Wedding Celebrations",
+    title: "Shashank & Pankhuri — Wedding Celebrations",
     startsAt: "2026-11-23T12:00:00+05:30",
     durationMinutes: 300,
     dateLabel: "Monday, 23 November 2026",
     timeLabel: "12:00 PM onwards",
+  },
+
+  heroCard: {
+    invocation: "Shree Ganeshaya Namah",
+    parents: "Lt. Mrs. Seema Puri & Mr. Neeraj Puri",
+    elders: [
+      "Mrs. Suman Puri & Mr. Sanjay Puri",
+      "Mrs. Sunita Puri & Mr. Anuj Puri",
+    ],
+    invitationLine:
+      "Together, we request your gracious presence at the wedding festivities of",
   },
 
   heroDates: {
@@ -51,9 +62,9 @@ export const invitation = {
 
   families: {
     groomSide: {
-      parents: "Mr. Neeraj Puri & Lt. Mrs. Seema Puri",
+      parents: "Lt. Mrs. Seema Puri & Mr. Neeraj Puri",
       grandParents: "Lt. Mrs. Kanchan Puri & Lt. Mr. Kulwant Rai Puri",
-      line: "Son of Mr. Neeraj Puri & Lt. Mrs. Seema Puri",
+      line: "Son of Lt. Mrs. Seema Puri & Mr. Neeraj Puri",
     },
     brideSide: {
       parents: "Mrs. Manisha Shukla & Mr. Gopal Krishna Shukla",
@@ -61,15 +72,23 @@ export const invitation = {
       line: "Daughter of Mrs. Manisha Shukla & Mr. Gopal Krishna Shukla",
     },
     blessings: [
-      "Mrs. Suman Puri & Mr. Sanjay Puri",
-      "Mrs. Sunita Puri & Mr. Anuj Puri",
-      "Mrs. Nishi Gupta & Mr. Ashutosh Gupta",
-      "Baby Raysha Gupta",
+      "Puri Family",
+      "Arora Family",
+      "Sachdeva Family",
+      "Kapoor Family",
+      "Gupta Family",
+      "Gandhi Family",
     ],
   },
 
+  heavenlyBlessings: [
+    "Lt. Mrs. Kanchan Puri",
+    "Lt. Mr. Kulwant Rai Puri",
+    "Lt. Mrs. Seema Puri",
+  ],
+
   invitationNote:
-    "With the heavenly blessings of our ancestors and the loving presence of our families, we cordially invite you to celebrate the wedding festivities of Pankhuri & Shashank. Your love and blessings are our greatest gift.",
+    "With the heavenly blessings of our ancestors and the loving presence of our families, we cordially invite you to celebrate the wedding festivities of Shashank & Pankhuri. Your love and blessings are our greatest gift.",
 
   story: [
     {
@@ -106,7 +125,7 @@ export const invitation = {
     },
     {
       key: "sangeet",
-      name: "Engagement / Sangeet",
+      name: "Sagan/Engagement",
       startsAt: "2026-11-23T19:00:00+05:30",
       durationMinutes: 300,
       venue: "Bhoomika Hall",
@@ -152,21 +171,27 @@ export const invitation = {
   youtubeBgmUrl: "https://youtu.be/1LVpuWpRs3I?si=iIRl-CVJ33y_hMGx",
 
   rsvp: {
-    title: "RSVP",
-    instructions:
-      "Please click on WhatsApp below to send details of the number of guests along with Aadhar card photo(s) for hotel check-in at Raj Vilas Palace.",
+    title: "R.S.V.P.",
+    firms: [
+      "M/s Bullet Lock Co",
+      "M/s K.K. Precision Works",
+      "M/s Puri Auto Products",
+    ],
     contacts: [
       {
-        name: "Neeraj Puri",
-        relation: "Father",
-        phone: "+91-9443041916",
-        whatsapp: "919443041916",
+        name: "Sanjay Puri",
+        phone: "+91-9792168376",
+        whatsapp: "919792168376",
       },
       {
-        name: "Sandeep Puri",
-        relation: "Brother",
-        phone: "+91-8400834097",
-        whatsapp: "918400834097",
+        name: "Neeraj Puri",
+        phone: "+91-9453041916",
+        whatsapp: "919453041916",
+      },
+      {
+        name: "Anuj Puri",
+        phone: "+91-9453041917",
+        whatsapp: "919453041917",
       },
     ],
   },

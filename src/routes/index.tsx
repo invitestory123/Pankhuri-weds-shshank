@@ -15,7 +15,7 @@ import { Rsvp } from "@/components/invite/Rsvp";
 import { FooterBlessing } from "@/components/invite/FooterBlessing";
 import { invitation } from "@/config/invitation";
 
-const title = `${invitation.couple.bride} & ${invitation.couple.groom} — Wedding Invitation`;
+const title = `${invitation.couple.groom} & ${invitation.couple.bride} — Wedding Invitation`;
 const description = `Join us on 23rd & 24th November 2026 at ${invitation.venue.name}, Orchha, M.P. Schedule, venue map and countdown inside.`;
 
 export const Route = createFileRoute("/")({

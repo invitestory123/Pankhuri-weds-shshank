@@ -49,67 +49,50 @@ export function Hero() {
       />
 
       <div className="relative mx-auto max-w-md">
-        <div className="arch-frame relative px-6 pt-18 pb-8 text-center sm:px-10 sm:pt-22">
+        <div className="arch-frame relative px-6 pt-16 pb-8 text-center sm:px-10 sm:pt-20">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="mx-auto max-w-[270px] space-y-1.5"
+            className="mx-auto max-w-xs space-y-3"
           >
-            <p className="font-kicker text-gold text-[0.6rem] tracking-[0.22em] uppercase font-medium">
-              {invitation.invocation}
+            <p className="font-kicker text-gold text-[0.62rem] sm:text-xs tracking-[0.24em] uppercase font-semibold">
+              || Shree Ganeshaya Namah ||
             </p>
-            <p className="font-kicker text-ink/60 text-[0.54rem] tracking-[0.3em] uppercase">
-              You are invited
+
+            <div className="pt-1">
+              <p className="font-display text-maroon text-sm sm:text-base font-semibold tracking-wide">
+                Lt. Mrs. Seema Puri &amp; Mr. Neeraj Puri
+              </p>
+            </div>
+
+            <div className="space-y-0.5">
+              <p className="font-body text-ink/80 text-xs sm:text-[0.82rem] font-medium">
+                Mrs. Suman Puri &amp; Mr. Sanjay Puri
+              </p>
+              <p className="font-body text-ink/80 text-xs sm:text-[0.82rem] font-medium">
+                Mrs. Sunita Puri &amp; Mr. Anuj Puri
+              </p>
+            </div>
+
+            <div className="via-gold/50 mx-auto my-2 h-px w-28 bg-gradient-to-r from-transparent to-transparent" />
+
+            <p className="font-body text-ink/75 text-xs sm:text-[0.82rem] leading-relaxed italic px-2">
+              Together, we request your gracious presence at the wedding festivities of
             </p>
+
+            <h1 className="font-script text-maroon pt-1 text-[2.5rem] leading-[1.12] sm:text-5xl">
+              Shashank{" "}
+              <span className="font-display text-gold mx-1 text-xl sm:text-2xl font-light italic">
+                with
+              </span>{" "}
+              Pankhuri
+            </h1>
           </motion.div>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="font-script text-maroon mt-4 text-[2.45rem] leading-[1.08] sm:text-6xl"
-          >
-            {invitation.couple.bride}
-            <span className="font-display text-gold mx-2 text-3xl sm:text-4xl">&</span>
-            {invitation.couple.groom}
-          </motion.h1>
-
-          <motion.div
-            initial={{ opacity: 0, scaleX: 0 }}
-            animate={{ opacity: 1, scaleX: 1 }}
-            transition={{ delay: 1, duration: 0.9 }}
-            className="via-gold mx-auto mt-5 h-px w-40 bg-gradient-to-r from-transparent to-transparent"
-          />
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.15, duration: 0.8 }}
-            className="mt-5 flex items-center justify-center gap-4"
-          >
-            <span className="font-kicker text-ink/70 text-[0.66rem] tracking-[0.3em] uppercase">
-              {invitation.heroDates.month}
-            </span>
-            <span className="border-gold/50 font-display text-maroon border-x px-4 text-3xl sm:text-4xl">
-              {invitation.heroDates.dates}
-            </span>
-            <span className="font-kicker text-ink/70 text-[0.66rem] tracking-[0.3em] uppercase">
-              {invitation.heroDates.year}
-            </span>
-          </motion.div>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.3, duration: 0.8 }}
-            className="font-body text-ink/65 mt-2 text-xs tracking-[0.2em] uppercase"
-          >
-            {invitation.heroDates.subtitle}
-          </motion.p>
 
           <motion.img
             src={couple}
-            alt={`Illustration of ${invitation.couple.bride} and ${invitation.couple.groom} in traditional wedding attire`}
+            alt={`Illustration of ${invitation.couple.groom} and ${invitation.couple.bride} in traditional wedding attire`}
             width={912}
             height={1200}
             style={{ y: coupleY }}

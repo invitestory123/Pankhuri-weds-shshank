@@ -82,7 +82,7 @@ export function Countdown() {
           </a>
           <button
             type="button"
-            onClick={() => downloadIcs(calendarEntry, "pankhuri-shashank-wedding.ics")}
+            onClick={() => downloadIcs(calendarEntry, "shashank-pankhuri-wedding.ics")}
             className="btn-outline inline-flex items-center justify-center gap-2 px-6 py-3 text-sm"
           >
             <CalendarDays className="size-4" aria-hidden />

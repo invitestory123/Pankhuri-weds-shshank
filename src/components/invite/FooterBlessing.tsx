@@ -17,7 +17,7 @@ export function FooterBlessing() {
           {invitation.closing.signOff}
         </p>
         <p className="font-display text-maroon mt-1 text-lg">
-          {invitation.couple.bride} &amp; {invitation.couple.groom}
+          {invitation.couple.groom} &amp; {invitation.couple.bride}
         </p>
       </div>
 

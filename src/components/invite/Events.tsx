@@ -13,7 +13,7 @@ export function Events() {
         <h2 className="font-display text-maroon mt-3 text-3xl sm:text-4xl">
           The Celebrations
         </h2>
-        <p className="font-body text-ink/65 mt-2 text-xs tracking-wider uppercase">
+        <p className="font-display text-maroon/90 mt-2 text-sm sm:text-base font-semibold tracking-wider uppercase">
           23rd &amp; 24th November 2026 · Orchha
         </p>
       </Reveal>
@@ -22,14 +22,14 @@ export function Events() {
         {invitation.events.map((event, i) => (
           <Reveal key={event.key} delay={i * 0.05}>
             <article className="border-gold/30 bg-paper/85 rounded-3xl border px-6 py-5 shadow-[0_18px_40px_-34px_var(--shadow-gold)] backdrop-blur-sm">
-              <div className="flex items-center justify-between gap-2">
-                <span className="font-kicker text-gold text-[0.6rem] tracking-[0.28em] uppercase">
+              <div className="flex items-center justify-between gap-2 border-b border-gold/20 pb-2.5">
+                <span className="font-display text-maroon text-base sm:text-lg font-semibold tracking-wide">
                   {formatEventDate(event.startsAt)}
                 </span>
-                <Sparkles className="text-gold/60 size-3.5" aria-hidden />
+                <Sparkles className="text-gold/80 size-4" aria-hidden />
               </div>
 
-              <h3 className="font-display text-maroon mt-2 text-3xl">{event.name}</h3>
+              <h3 className="font-display text-maroon mt-3 text-3xl">{event.name}</h3>
 
               <div className="mt-3 space-y-1.5">
                 <p className="font-body text-ink/75 flex items-center gap-2 text-sm">

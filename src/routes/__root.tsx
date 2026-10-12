@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Pankhuri & Shashank — Wedding Invitation" },
+      { title: "Shashank & Pankhuri — Wedding Invitation" },
       {
         name: "description",
         content:
           "Join us on 23rd & 24th November 2026 at Raj Vilas Palace, Orchha, M.P. Schedule, venue map and countdown inside.",
       },
       { name: "author", content: "InviteStory" },
-      { property: "og:title", content: "Pankhuri & Shashank — Wedding Invitation" },
+      { property: "og:title", content: "Shashank & Pankhuri — Wedding Invitation" },
       {
         property: "og:description",
         content:

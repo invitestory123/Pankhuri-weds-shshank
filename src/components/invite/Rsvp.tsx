@@ -19,29 +19,33 @@ export function Rsvp() {
   const { rsvp } = invitation;
 
   const defaultWaMessage = encodeURIComponent(
-    "Namaste! We are happy to confirm our presence for Pankhuri & Shashank's wedding celebrations at Orchha.\n\n• Name:\n• Number of Guests:\n• Attached: Aadhar Card photo(s) for hotel check-in"
+    "Namaste! We are happy to confirm our presence for Shashank & Pankhuri's wedding celebrations at Orchha.\n\n• Name:\n• Number of Guests:\n• Attached: Aadhar Card photo(s) for hotel check-in"
   );
 
   return (
     <section id="rsvp" className="relative px-5 py-16">
       <Reveal className="mx-auto mb-10 max-w-md text-center">
-        <h2 className="font-display text-maroon text-3xl sm:text-4xl">
+        <h2 className="font-display text-maroon text-3xl sm:text-4xl tracking-wider">
           {rsvp.title}
         </h2>
         <div className="via-gold mx-auto mt-4 h-px w-32 bg-gradient-to-r from-transparent to-transparent" />
       </Reveal>
 
-      <Reveal className="mx-auto max-w-lg">
-        {/* Notice Card regarding Aadhar photo & guests */}
+      <Reveal className="mx-auto max-w-xl">
         <div className="border-gold/30 bg-paper/85 rounded-3xl border p-6 text-center shadow-[0_18px_40px_-34px_var(--shadow-gold)] backdrop-blur-sm">
-          <p className="font-body text-ink/80 text-sm leading-relaxed sm:text-base">
-            {rsvp.instructions}
-          </p>
+          {/* Business Firms */}
+          <div className="border-gold/25 bg-paper/70 rounded-2xl border px-5 py-4 mb-6">
+            <div className="space-y-1.5 font-display text-maroon text-base sm:text-lg font-medium tracking-wide">
+              {rsvp.firms.map((firm) => (
+                <p key={firm}>{firm}</p>
+              ))}
+            </div>
+          </div>
 
           <div className="via-gold/30 my-6 h-px w-full bg-gradient-to-r from-transparent to-transparent" />
 
           {/* Contacts List */}
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-4 sm:grid-cols-3">
             {rsvp.contacts.map((contact) => {
               const waUrl = `https://wa.me/${contact.whatsapp}?text=${defaultWaMessage}`;
 
@@ -51,13 +55,10 @@ export function Rsvp() {
                   className="border-gold/25 bg-paper/90 flex flex-col justify-between rounded-2xl border p-4 text-center shadow-xs"
                 >
                   <div>
-                    <h3 className="font-display text-maroon text-lg">
+                    <h3 className="font-display text-maroon text-lg font-semibold">
                       {contact.name}
                     </h3>
-                    <p className="font-kicker text-ink/60 mt-0.5 text-[0.62rem] tracking-wider uppercase">
-                      {contact.relation}
-                    </p>
-                    <p className="font-body text-ink/75 mt-2 text-xs font-medium">
+                    <p className="font-body text-ink/80 mt-1 text-xs sm:text-sm font-semibold tracking-wide">
                       {contact.phone}
                     </p>
                   </div>
@@ -67,10 +68,10 @@ export function Rsvp() {
                       href={waUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-2.5 text-xs font-semibold text-white shadow-sm transition-transform hover:brightness-105 active:scale-95"
+                      className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-[#25D366] px-3 py-2 text-xs font-semibold text-white shadow-sm transition-transform hover:brightness-105 active:scale-95"
                     >
-                      <WhatsAppIcon className="size-4 shrink-0" />
-                      <span>RSVP on WhatsApp</span>
+                      <WhatsAppIcon className="size-3.5 shrink-0" />
+                      <span>WhatsApp</span>
                     </a>
 
                     <a
@@ -86,7 +87,7 @@ export function Rsvp() {
             })}
           </div>
 
-          <p className="font-body text-ink/55 mt-5 text-xs italic">
+          <p className="font-body text-ink/55 mt-6 text-xs italic">
             Please attach Aadhar card photos of all staying guests for seamless hotel check-in.
           </p>
         </div>
